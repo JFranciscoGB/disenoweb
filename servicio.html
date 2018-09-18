@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Título de la WEB</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">    
+    <link href="http://dominio.com/hoja-de-estilos.css" rel="stylesheet" type="text/css"/>    
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <script type="text/javascript">
+  function hacer_hover()
+	{
+		//si el click pasa por DIV UNO CAMBIA IMAGEN 
+		
+	}
+	
+	function cambioImg(id){ 
+if (id=="foto1") {
+
+document.getElementById("imagen_ref").innerHTML = "<img class='responsive-img' src='tuimagen.gif' />"; 
+}
+else if(id=="foto2"){
+document.getElementById("imagen_ref").innerHTML = "<img src='cableado.png' />"; 
+}
+
+else if(id=="foto3"){
+document.getElementById("imagen_ref").innerHTML = "<img src='cdp.jpg' />"; 
+}
+else if(id=="foto4"){
+document.getElementById("imagen_ref").innerHTML = "<img src='virtualizacion.png' />"; 
+}
+else{
+ 
+document.getElementById("pruebaMouse").innerHTML = "<a href='#'>link de prueba </a>"; 
+}
+} 
+  </script>
+  
+  </head>  
+  <body>    
+  
+<!--style type="text/css">
+.thumbnail:hover{
+opacity: 0.5;
+background:#F2F4F4  ;
+}
+
+.thumbnail a{
+	text-decoration:none;
+}
+
+
+.thumbnail h3:hover{
+font-size:35px;
+}
+</style--->
+
+<style>
+#contenido_servicios{
+background-color:rgb(33,53,67);
+}
+#uno a:hover{
+background-color:rgb(0,53,0);
+}
+#uno a{
+text-decoration:none; 
+color:white;
+}
+
+#dos a{
+text-decoration:none; 
+color:white;
+}
+
+#tres a{
+text-decoration:none; 
+color:white;
+}
+
+#cuatro a{
+text-decoration:none; 
+color:white;
+}
+#cinco a{
+text-decoration:none; 
+color:white;
+}
+#seis a{
+text-decoration:none; 
+color:white;
+}
+#siete a{
+text-decoration:none; 
+color:white;
+}
+
+#cuatro a h1:hover{
+text-decoration:none; 
+color:blue;
+}
+.largo{
+height :280px;
+}
+
+</style>
+
+<div id="contenido_servicios" >
+<div class="container">
+
+
+
+<div class="row">
+
+<div class="col-lg-8 col-sm-6 col-md-4">  
+
+<div id="uno" onmouseover="cambioImg('cableado')" >
+<a href="prueba.html">
+<h1>Cableado Estructurado</h1>
+<h3 class="justify">
+Las empresas deben mejorar sus 
+comunicaciones interiores y exteriores .</h3>
+<p>
+</p>
+</a>
+</div >
+
+<div id="dos" >
+<a href="prueba.html" onmouseover="cambioImg('foto3')" >
+<h1>Comunicación de Datos </h1>
+<h3>Uno de los activos más importantes de una empresa. </H3>
+
+</a>
+</div>
+<div id="tres">
+<a href="prueba.html" onmouseover="cambioImg('foto4')" >
+<h1>Almacenamiento</h1>
+<h3>Cualquier organización que se precie,  debe contar con una Base de Datos.</h3>
+</a>
+</div>
+<div id="cuatro">
+<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
+<h1>CDP</h1>
+<h3>La elección del CPD supone dar un paso diferenciador a la empresa y debe ser considerado 
+una inversión muy rentable.  </h3>
+</a>
+</div>
+
+<div id="cinco">
+<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
+<h1>Mantenimiento Integral</h1>
+<h3> Mantenimento Preventivo + Mantenimento Correctivo </h3>
+</a>
+</div>
+
+<div id="seis">
+<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
+<h1>Telefonía de Comunicación</h1>
+<h3>  </h3>
+</a>
+</div>
+<div id="siete">
+<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
+<h1>Virtualización</h1>
+<h3>  </h3>
+</a>
+</div>
+
+
+ </div>
+  
+<div class="col-lg-4 col-sm-6 col-md-4">  
+<div class="largo"></div>
+ <div id="imagen_ref">
+
+ 
+ </div>
+</a>
+  </div>
+
+
+</div>
+
+</div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
