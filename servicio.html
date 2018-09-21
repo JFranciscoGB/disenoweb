@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="title" content="Título de la WEB">
     <meta name="description" content="Descripción de la WEB">    
-    <link href="http://dominio.com/hoja-de-estilos.css" rel="stylesheet" type="text/css"/>    
+      
 
 
 <!-- Latest compiled and minified CSS -->
@@ -23,17 +23,26 @@
 	function cambioImg(id){ 
 if (id=="foto1") {
 
-document.getElementById("imagen_ref").innerHTML = "<img class='responsive-img' src='tuimagen.gif' />"; 
+document.getElementById("imagen_ref").innerHTML = "<img class='img-fluid' src='/wp-content/uploads/2018/09/cableado.png' />"; 
 }
 else if(id=="foto2"){
-document.getElementById("imagen_ref").innerHTML = "<img src='cableado.png' />"; 
+document.getElementById("imagen_ref").innerHTML = "<img src='/wp-content/uploads/2018/09/c_datos.png' />"; 
 }
 
 else if(id=="foto3"){
-document.getElementById("imagen_ref").innerHTML = "<img src='cdp.jpg' />"; 
+document.getElementById("imagen_ref").innerHTML = "<img src='/wp-content/uploads/2018/09/almacenamiento.png' />"; 
 }
 else if(id=="foto4"){
-document.getElementById("imagen_ref").innerHTML = "<img src='virtualizacion.png' />"; 
+document.getElementById("imagen_ref").innerHTML = "<img src='/wp-content/uploads/2018/09/cpd.png' />"; 
+}
+else if(id=="foto5"){
+document.getElementById("imagen_ref").innerHTML = "<img src='/wp-content/uploads/2018/09/m_integral.png' />"; 
+}
+else if(id=="foto6"){
+document.getElementById("imagen_ref").innerHTML = "<img src='/wp-content/uploads/2018/09/telefonia.png' />"; 
+}
+else if(id=="foto7"){
+document.getElementById("imagen_ref").innerHTML = "<img src='../virtualizacion.png' />"; 
 }
 else{
  
@@ -100,26 +109,63 @@ text-decoration:none;
 color:white;
 }
 
-#cuatro a h1:hover{
+#cuatro a  h1:hover{
 text-decoration:none; 
 color:blue;
+
 }
+
 #uno a h2:hover{
 text-decoration:none; 
-color:blue;
+color:#3498DB;
+font-weight:bold;
 }
-#uno a h1{
+#dos a h2:hover{
 text-decoration:none; 
-color:white;
-font-size:50px;
+color:#F39C12;
+font-weight:bold;
+}
+#tres a h2:hover{
+text-decoration:none; 
+color:#2ECC71;
+font-weight:bold;
+}
+#cuatro a h2:hover{
+text-decoration:none; 
+color:#F1C40F;
+font-weight:bold;
+}
+#cinco a h2:hover{
+text-decoration:none; 
+color:#A569BD;
+font-weight:bold;
+}
+#seis a h2:hover{
+text-decoration:none; 
+color:#E74C3C;
+font-weight:bold;
+}
+#siete a h2:hover{
+text-decoration:none; 
+color:#F1C40F;
+font-weight:bold;
 }
 
 .largo{
-height :280px;
+height :200px;
 }
 .largo1{
 height :35px;
 }
+
+.glyphicon-flash{font-size:30px;} 
+.glyphicon-earphone{font-size:30px;}
+.glyphicon-cloud{font-size:30px;}
+.glyphicon-hdd{font-size:30px;}
+.glyphicon-wrench{font-size:30px;}
+.glyphicon-globe{font-size:30px;}
+.glyphicon-cd{font-size:30px;}
+
 
 </style>
 
@@ -132,12 +178,14 @@ height :35px;
 
 <div class="col-lg-8 col-sm-6 col-md-4">  
 
-<div id="uno" onmouseover="cambioImg('cableado')" >
+<div id="uno" onmouseover="cambioImg('foto1')" >
 <a href="prueba.html">
 <table>
 <tr>
-<td><h1>.-</h1></td>
-<td><h2>Cableado Estructurado</h2></td>
+<td>  
+<span class="glyphicon glyphicon-flash"></span>
+      </td>
+<td><h2>&nbsp; Cableado Estructurado</h2></td>
 </tr>
 </table>
 <h4 class="justify">
@@ -149,43 +197,84 @@ comunicaciones interiores y exteriores .</h4>
 </div >
 
 <div id="dos" >
-<a href="prueba.html" onmouseover="cambioImg('foto3')" >
-<h2>Comunicación de Datos </h2>
+<a href="prueba.html" onmouseover="cambioImg('foto2')" >
+
+
+<h2><i class="glyphicon glyphicon-earphone">
+ Comunicacion de Datos</i></h2>
+
 <h4>Uno de los activos más importantes de una empresa. </h4>
 
 </a>
 </div>
 <div id="tres">
-<a href="prueba.html" onmouseover="cambioImg('foto4')" >
-<h2>Almacenamiento</h2>
+<a href="prueba.html" onmouseover="cambioImg('foto3')" >
+<table>
+<tr>
+<td>  
+<span class="glyphicon glyphicon-cloud"></span>
+      </td>
+<td><h2>&nbsp; Almacenamiento</h2></td>
+</tr>
+</table>
 <h4>Cualquier organización que se precie,  debe contar con una Base de Datos.</h4>
 </a>
 </div>
 <div id="cuatro">
-<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
-<h2>CDP</h2>
+<a href="prueba.html" onmouseover="cambioImg('foto4')" onmouseout="cambioImg()">
+<table>
+<tr>
+<td>  
+<span class="glyphicon glyphicon-hdd"></span>
+      </td>
+<td><h2>&nbsp; CPD</h2></td>
+</tr>
+</table>
 <h4>La elección del CPD supone dar un paso diferenciador a la empresa y debe ser considerado 
 una inversión muy rentable.  </h4>
 </a>
 </div>
 
 <div id="cinco">
-<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
-<h2>Mantenimiento Integral</h2>
+<a href="prueba.html" onmouseover="cambioImg('foto5')" onmouseout="cambioImg()">
+<table>
+<tr>
+<td>  
+<span class="glyphicon glyphicon-wrench"></span>
+      </td>
+<td><h2>&nbsp; Mantenimiento Integral</h2></td>
+</tr>
+</table>
 <h4> Mantenimento Preventivo + Mantenimento Correctivo </h4>
 </a>
 </div>
 
 <div id="seis">
-<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
-<h2>Telefonía de Comunicación</h2>
-<h4>  </h4>
+<a href="prueba.html" onmouseover="cambioImg('foto6')" onmouseout="cambioImg()">
+<table>
+<tr>
+<td>  
+<span class="glyphicon glyphicon-globe"></span>
+      </td>
+<td><h2>&nbsp; Telefonia de Comunicacion</h2></td>
+</tr>
+</table>
+<h4>Llamada mediante telefonía voip es en la mayoría de los casos mucho
+ mas barata que su equivalente en telefonía convencional.   </h4>
 </a>
 </div>
 <div id="siete">
-<a href="prueba.html" onmouseover="cambioImg('foto1')" onmouseout="cambioImg()">
-<h2>Virtualización</h2>
-<h4>  </h4>
+<a href="prueba.html" onmouseover="cambioImg('foto7')" onmouseout="cambioImg()">
+<table>
+<tr>
+<td>  
+<span class="glyphicon glyphicon-cd"></span>
+      </td>
+<td><h2>&nbsp; Virtualizacion</h2></td>
+</tr>
+</table>
+<h4>Tecnología que proporciona a las empresas todas las herramientas que necesitan para 
+mejorar la utilización, aprovechamiento y escalabilidad de su sistema. </h4>
 </a>
 </div>
 
@@ -214,3 +303,18 @@ una inversión muy rentable.  </h4>
 
 </body>
 </html>
+
+
+
+<div class="col l1">
+  <i class=" material-icons orange600">devices</i>
+  </div>
+
+
+  <div class="row"> 
+<div class="col l1">
+  <i class=" material-icons orange600">devices</i>
+  </div>
+<h5 class="center"> Estrategias publicitarias  que
+ se ejecutan en los medios y canales de internet. </h5>
+</div>
